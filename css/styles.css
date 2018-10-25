@@ -78,7 +78,6 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
 }
 
 /* Display list items side by side */
@@ -88,9 +87,10 @@ nav h1 a {
 
 /* Add a slash symbol (/) before/behind each list item */
 #breadcrumb li+li:before {
-    padding: 8px;
+    padding: 5px;
     color: black;
-    content: "/\00a0";
+    /*content: "/\00a0";*/
+    content: "\007C";
 }
 
 /* Add a color to all links inside the list */
@@ -128,7 +128,7 @@ nav h1 a {
   margin-bottom: 0.2rem;
 
 }
-.filter-options select {
+.filter-options div select {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
@@ -212,7 +212,7 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
-.inside header {
+/* .inside header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -224,18 +224,18 @@ nav h1 a {
   position: fixed;
   right: 0;
   top: 80px;
-  width: 50%;
+  width: 100%;
 }
 .inside #map {
   background-color: #ccc;
   height: 100%;
-  width: 100%;
-}
+  width: 100%; 
+} 
 .inside #footer {
   bottom: 0;
   position: absolute;
   width: 50%;
-}
+}  */
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
